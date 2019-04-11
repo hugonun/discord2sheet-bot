@@ -39,7 +39,7 @@ async def on_message(message):
         for muser in message.mentions:
             if muser.id == client.user.id:
                 if any(word in message.content for word in ['whois','who is','Help','help','info']):
-                    await message.channel.send('This bot was made by hugonun(https://github.com/hugonun/).\nSource code: https://github.com/discord2sheet-bot')
+                    await message.channel.send('This bot was made by hugonun(https://github.com/hugonun/).\nSource code: https://github.com/hugonun/discord2sheet-bot')
 
 
 client.run('') # Add bot token here
