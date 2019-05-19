@@ -1,3 +1,7 @@
+# BSD 3-Clause License
+# Copyright (c) 2019, Hugonun(https://github.com/hugonun)
+# All rights reserved.
+
 import discord
 
 from gsheet import *
