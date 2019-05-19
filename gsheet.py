@@ -1,3 +1,7 @@
+# BSD 3-Clause License
+# Copyright (c) 2019, Hugonun(https://github.com/hugonun)
+# All rights reserved.
+
 from __future__ import print_function
 import pickle
 import os.path
