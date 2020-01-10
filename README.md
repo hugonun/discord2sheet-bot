@@ -24,7 +24,7 @@ SPREADSHEET_ID = <> - The ID of the spreashsheet to store the data. It can be fo
 
 FIELDS = <> - Amount of fields/cells that get stored. They are on the user's message seperated by comma (!s field1, field2,field 3)
 
-client.run('<>') - The token of the Discord bot
+client.run('<>') - The token of the Discord bot.
 
 **Step 3:** Install Python dependencies
 
@@ -37,3 +37,13 @@ Run the pip command listed here: https://developers.google.com/sheets/api/quicks
 **Step 4:** Run the bot
 
 `python init.py`
+
+------
+
+## Additional configutations
+
+REQUIREDROLE = <> - If you want to restrict the command to a specific role, insert here the role id. If not, insert None.
+
+RANGE_NAME = <> - Where the data should go in the spreadsheet. Default value is A1.
+
+DATA = <> - What data goes to the rows, seperated by []. Example: DATA = [result[0]] + [''] + [result[1]]
