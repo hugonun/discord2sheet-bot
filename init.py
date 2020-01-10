@@ -17,6 +17,13 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
+    
+    # Restrict the command to a role
+    # Change REQUIREDROLE to a role id or None
+    REQUIREDROLE = None
+    if not REQUIREDROLE = None and discord.utils.get(user.roles, name=str(REQUIREDROLE) is None:
+        await message.channel.send('You don\'t have the required role!')
+        return
 
     # Command to insert data to excel
     if message.content.startswith('!s '):
