@@ -46,4 +46,4 @@ REQUIREDROLE = <> - If you want to restrict the command to a specific role, inse
 
 RANGE_NAME = <> - Where the data should go in the spreadsheet. Default value is `A1`.
 
-DATA = <> - What data goes to the rows, seperated by []. Example: `DATA = [result[0]] + [''] + [result[1]]`
+DATA = <> - What data goes to the rows, seperated by `[]`. Example: `DATA = [result[0]] + [''] + [result[1]]`
