@@ -30,7 +30,7 @@ client.run('<>') - The token of the Discord bot.
 
 If you haven't installed Python yet, download it [here](https://www.python.org/).
 
-Install discordpy: `pip install discordpy`
+Install discordpy: `pip install discord.py`
 
 Run the pip command listed here: https://developers.google.com/sheets/api/quickstart/python#step_2_install_the_google_client_library
 
