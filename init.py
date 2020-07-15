@@ -37,7 +37,7 @@ async def on_message(message):
         if len(result) == FIELDS:
             # Add
             print(message.created_at)
-            DATA = [message.author.name] + [message.author.id] + [str(message.created_at)] + result
+            DATA = [message.author.name] + [str(message.author.id)] + [str(message.created_at)] + result
             sheet.add(SPREADSHEET_ID, RANGE_NAME, DATA)
             await message.channel.send('Your data has been successfully submitted!')
         else:
