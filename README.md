@@ -42,7 +42,7 @@ Run the pip command listed here: https://developers.google.com/sheets/api/quicks
 
 ## Additional configutations
 
-REQUIREDROLE = <> - If you want to restrict the command to a specific role, insert here the role id. If not, insert` None`.
+REQUIREDROLE = <> - If you want to restrict the command to a specific role, insert here the role id. If not, insert `None`.
 
 RANGE_NAME = <> - Where the data should go in the spreadsheet. Default value is `A1`.
 
