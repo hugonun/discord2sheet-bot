@@ -17,13 +17,6 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    
-    # Restrict the command to a role
-    # Change REQUIREDROLE to a role id or None
-    REQUIREDROLE = None
-    if REQUIREDROLE is not None and discord.utils.get(message.author.roles, id=str(REQUIREDROLE)) is None:
-        await message.channel.send('You don\'t have the required role!')
-        return
 
     # Command to insert data to excel
     if message.content.startswith('!s '):
@@ -31,6 +24,13 @@ async def on_message(message):
         RANGE_NAME = 'A1'
         FIELDS = 2 # Amount of fields/cells
 
+        # Restrict the command to a role
+        # Change REQUIREDROLE to a role id or None
+        REQUIREDROLE = None
+        if REQUIREDROLE is not None and discord.utils.get(message.author.roles, id=int(REQUIREDROLE)) is None:
+            await message.channel.send('You don\'t have the required role!')
+            return
+    
         # Code
         msg = message.content[3:]
         result = [x.strip() for x in msg.split(',')]
