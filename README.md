@@ -14,7 +14,7 @@ Username - UserID - Date - Field 1 - Field 2
 
 ## How to set it up
 
-**Step 1:** Enable the API and download credentials.json. This can be done here: https://developers.google.com/sheets/api/quickstart/python#step_1_turn_on_the
+**Step 1:** Enable the API and download credentials.json for desktop app (not web). This can be done here: https://developers.google.com/workspace/guides/create-credentials
 
 Make sure credentials.json is stored in the same directory as the bot.
 
